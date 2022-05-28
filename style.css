@@ -1,0 +1,34 @@
+body{
+    background-color: blueviolet;
+}
+
+.wrapper{
+    height: 100vh;
+    /* ここのパートはとても重要です */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing-demo{
+    color: violet;
+    width: 54ch;
+    animation: typing 3s steps(51),blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Special Elite', cursive;
+    font-size: 1em;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+}
